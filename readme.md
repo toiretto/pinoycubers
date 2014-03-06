@@ -31,6 +31,7 @@
 				Allow from all
 		    </Directory>
 		</VirtualHost>
+
 5. Add pinoycubers.org to host file.
 		
 		127.0.0.1 pinoycubers.org
