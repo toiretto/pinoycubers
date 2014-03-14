@@ -16,7 +16,7 @@
 
 		e.g. C:\cygwin64\bin
 	
-	Don't forgot to choose the following packages :
+	Don't forget to choose the following packages :
 	
 	- **chere**: Cygwin Prompt Here context menus
 	- **make**: The GNU version of 'make' utility
@@ -91,4 +91,4 @@ This is for the website only. We should eventually use *Vagrant* If we would be 
 3. The body should provide a meaningful commit message, which **uses the imperative, present tense** "change", not "changed" or "changes". See example in #2
 
 ## Notes
-1. You may use http://crunchapp.net/ for compiling less files. We only need to compile `bootstrap.less` and `site.less`
+1. You may use http://crunchapp.net/ or Prepros http://alphapixels.com/prepros/ for compiling less files. We only need to compile `bootstrap.less` and `site.less`
