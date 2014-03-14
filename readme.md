@@ -17,6 +17,7 @@
 		e.g. C:\cygwin64\bin
 	
 	Don't forgot to choose the following packages :
+	
 	- **chere**: Cygwin Prompt Here context menus
 	- **make**: The GNU version of 'make' utility
 	- **openssh**: The OpenSSH server and client programs
