@@ -1,6 +1,6 @@
 ## Pinoy Cubers
 
-[Planned]Features
+[Planned] Features
 
 1. **Unofficial Records** - Compare your record time with other cubers in the Philippines. We will verify your record time and post it on the unofficial Philippine records list
 2. **Learning Resources** - Share algorithms and checkout the algorithm database. Watch/Read puzzle solving tutorials
@@ -10,12 +10,45 @@
 6. **Events** - Check upcoming official competitions and see results online. View the calendar for cubemeets near you
 7. **Online Competitions** - Compete online with your friend on your favorite puzzles in real time. Host and join a competition using the web interface
 
-## Installation Instructions
+## Installation Instructions (using Vagrant)
+
+1. Install [Cygwin](http://www.cygwin.com/) and setup system path.
+
+		e.g. C:\cygwin64\bin
+	
+	Don't forgot to choose the following packages :
+	- **chere**: Cygwin Prompt Here context menus
+	- **make**: The GNU version of 'make' utility
+	- **openssh**: The OpenSSH server and client programs
+
+
+2. Install [Vagrant](http://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+3. Clone repository
+ 
+		git clone https://bitbucket.org/geocine/pinoycubers.git
+
+4. Right click the `pinoycubers` folder and click `Bash Prompt Here`
+5. While on the cygwin terminal. Type this:
+
+		vagrant up
+
+	> You may access ssh by typing `vagrant ssh`. To shutdown vagrant box type `vagrant destroy`
+
+6. Add pinoycubers.dev to host file.
+		
+		10.0.0.100 pinoycubers.dev
+
+7. Visit url http://pinoycubers.dev
+
+
+## Installation Instructions (for Website)
+This is for the website only. We should eventually use *Vagrant* If we would be using other technologies like message queues.
+
 1. Clone repository
  
 		git clone https://bitbucket.org/geocine/pinoycubers.git
 
-3. Install dependencies. Make sure you have composer installed.
+3. Install dependencies. Make sure you have composer installed. Download [here](https://getcomposer.org/Composer-Setup.exe).
 
 		composer install
 
@@ -23,7 +56,7 @@
 
 		<VirtualHost *:80>
 		    DocumentRoot "C:\xampp\htdocs\pinoycubers\public"
-		    ServerName pinoycubers.org
+		    ServerName pinoycubers.dev
 		    <Directory "C:\xampp\htdocs\pinoycubers\public">
 				Options Indexes FollowSymLinks Includes ExecCGI
 				AllowOverride All
@@ -32,11 +65,11 @@
 		    </Directory>
 		</VirtualHost>
 
-5. Add pinoycubers.org to host file.
+5. Add pinoycubers.dev to host file.
 		
-		127.0.0.1 pinoycubers.org
+		127.0.0.1 pinoycubers.dev
 
-6. Visit url http://pinoycubers.org
+6. Visit url http://pinoycubers.dev
 
 ## Commit Message Rules
 
