@@ -1,7 +1,5 @@
 ## Pinoy Cubers
 
-[Planned] Features
-
 1. **Unofficial Records** - Compare your record time with other cubers in the Philippines. We will verify your record time and post it on the unofficial Philippine records list
 2. **Learning Resources** - Share algorithms and checkout the algorithm database. Watch/Read puzzle solving tutorials
 3. **Events** - Check upcoming official competitions and see results online. View the calendar for cubemeets near you
@@ -10,7 +8,11 @@
 6. **Events** - Check upcoming official competitions and see results online. View the calendar for cubemeets near you
 7. **Online Competitions** - Compete online with your friend on your favorite puzzles in real time. Host and join a competition using the web interface
 
-## Installation Instructions (using Vagrant)
+## Installation Instructions
+
+### (Using Vagrant)
+
+Instructions for **Windows**. Sorry, I am a .NET dev as well. Can't get away with windows.
 
 1. Install [Cygwin](http://www.cygwin.com/) and setup system path.
 
@@ -33,62 +35,70 @@
 
 		vagrant up
 
-	> You may access ssh by typing `vagrant ssh`. To shutdown vagrant box type `vagrant destroy`
-
-6. Add pinoycubers.dev to host file.
+6. Add pinoycubers.dev to host file. *(Use the exact IP address)*
 		
 		10.0.0.100 pinoycubers.dev
 
-7. Visit url http://pinoycubers.dev
+#### Configuring Laravel
 
+1. Enter *Vagrant's* ssh
 
-## Installation Instructions (for Website)
-This is for the website only. We should eventually use *Vagrant* If we would be using other technologies like message queues.
+		vagrant ssh	
 
-1. Clone repository
+2. Migrate the database
+
+		php artisan migrate
  
-		git clone https://bitbucket.org/geocine/pinoycubers.git
+#### Connecting to MySQL on *Vagrant*
+	
+	host 	- 127.0.0.1
+	username - root
+	password - root
+	port	 - 3308
 
-3. Install dependencies. Make sure you have composer installed. Download [here](https://getcomposer.org/Composer-Setup.exe).
 
-		composer install
+## Contribution Guidelines
 
-4. Create virtual host 
+ - When planning a pull-request to add new functionality, it may be wise to [submit a proposal](https://github.com/geocine/pinoycubers/issues/new) to ensure compatibility with the project's goals.
+ - I suggest using *Vagrant* for development environment configuration
 
-		<VirtualHost *:80>
-		    DocumentRoot "C:\xampp\htdocs\pinoycubers\public"
-		    ServerName pinoycubers.dev
-		    <Directory "C:\xampp\htdocs\pinoycubers\public">
-				Options Indexes FollowSymLinks Includes ExecCGI
-				AllowOverride All
-				Order allow,deny
-				Allow from all
-		    </Directory>
-		</VirtualHost>
+### Tool Suggestion
 
-5. Add pinoycubers.dev to host file.
-		
-		127.0.0.1 pinoycubers.dev
+1. You may use [Crunchapp](http:http://crunchapp.net/) or [Prepros](http://alphapixels.com/prepros/) for compiling less files. We only need to compile `bootstrap.less` and `site.less`
+2. I prefer [PHPStorm](http://www.jetbrains.com/phpstorm/) for an IDE. [Sublime Text 3](http://www.sublimetext.com/3) for an editor.
 
-6. Visit url http://pinoycubers.dev
-
-## Commit Message Rules
+### Commit Message Rules
 
 1. **Why is this change necessary?**
 
-	This question tells what to expect in the commit, allowing them to more easily identify and point out unrelated changes.
+	This question tells what to expect in the commit, to easily identify and point out unrelated changes.
 
 2. **How does it address the issue?**
 
-	Describe, at a high level, what was done to affect change. 
-	`Introduce a red/black tree to increase search speed` 
-	or
-	`Remove <troublesome gem X>, which was causing <specific description of issue introduced by gem>` 
-	are good examples.
-	
+	Describe, at a high level, what was done to affect change. Here are some good examples:
+		Introduce a red/black tree to increase search speed 
+		Remove <X>, which was causing <specific description of issue introduced by X>
 	If your change is obvious, you may be able to omit addressing this question.
 
 3. The body should provide a meaningful commit message, which **uses the imperative, present tense** "change", not "changed" or "changes". See example in #2
 
-## Notes
-1. You may use http://crunchapp.net/ or Prepros http://alphapixels.com/prepros/ for compiling less files. We only need to compile `bootstrap.less` and `site.less`
+
+## Maintainers
+
+This code is maintained by Aivan Reigh Monceller of [Pinoy Cubers Association](https://www.facebook.com/groups/PINOYCUBERS/)
+
+### License
+
+New BSD License
+
+Copyright (c) 2014, Aivan Reigh Monceller 
+
+All rights reserved. 
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+
+- Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+- Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+- Neither the name of Pinoy Cubers Association nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
