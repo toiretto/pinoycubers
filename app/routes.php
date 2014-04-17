@@ -11,4 +11,7 @@
 |
 */
 
-Route::get('/', array('uses' => 'HomeController@showIndex'));
+Route::get('/', 'HomeController@showIndex');
+Route::get('login/fb', 'HomeController@fbLogin');
+Route::get('login/fb/callback', 'HomeController@fbLoginCallback');
+Route::get('logout', 'HomeController@logout');

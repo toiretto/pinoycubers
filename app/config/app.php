@@ -2,6 +2,11 @@
 
 return array(
 
+    'facebook' => array(
+        'appId' => '628592760543961',
+        'secret' => '8694ce01adc42880df47185aba37fd2d'
+    ),
+
 	/*
 	|--------------------------------------------------------------------------
 	| Application Debug Mode
@@ -107,8 +112,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		'Zizaco\Confide\ConfideServiceProvider',
-		'Zizaco\Entrust\EntrustServiceProvider',
+        'LeroyMerlin\LaraSniffer\ServiceProvider',
+        'Cartalyst\Sentry\SentryServiceProvider',
 	),
 
 	/*
@@ -174,8 +179,7 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Confide' 		  => 'Zizaco\Confide\ConfideFacade',
-		'Entrust'    	  => 'Zizaco\Entrust\EntrustFacade',
+        'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry'
 
 	),
 

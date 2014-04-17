@@ -7,8 +7,9 @@
 		"laravel/framework": "4.1.*",
 		"codeception/codeception": "1.8.*",
 		"way/generators": "dev-master",
-		"zizaco/confide": "3.1.*",
-		"zizaco/entrust": "1.1.*"
+        "cartalyst/sentry": "2.1.*",
+        "leroy-merlin-br/larasniffer": "dev-master",
+		"facebook/php-sdk": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

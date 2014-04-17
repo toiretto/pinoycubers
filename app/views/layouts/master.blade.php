@@ -22,7 +22,7 @@
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
+          <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -34,13 +34,24 @@
               <a class="navbar-brand" href="#"><i class="fa fa-home"></i></a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse">
-              <!-- Right Panel -->
-              <ul class="nav navbar-nav navbar-right">
-                @yield('nav_right')
-              </ul> 
-            </div><!-- /.navbar-collapse -->
+
+              <div class="collapse navbar-collapse navbar-ex1-collapse">>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                          @if (Auth::check())
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                              <i class="fa fa-user"></i>{{Auth::user()->name}} <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a href="/#"><i class="fa fa-edit"></i> Edit Profile</a></li>
+                              <li><a href="/logout"><i class="fa fa-power-off"></i> Log Out</a></li>
+                          </ul>
+                          @else
+                          <a href="/login/fb">Login</a>
+                          @endif
+                      </li>
+                  </ul>
+              </div>
           </div><!-- /.container-fluid -->
         </nav>
 
@@ -60,5 +71,12 @@
         <!-- Scripts are placed here -->
         {{ HTML::script('packages/js/jquery-2.1.0.js')}}
         {{ HTML::script('packages/js/bootstrap.js')}}
+        <script type="text/javascript">
+            if (window.location.hash == '#_=_'){
+                history.replaceState
+                    ? history.replaceState(null, null, window.location.href.split('#')[0])
+                    : window.location.hash = '';
+            }
+        </script>
     </body>
 </html>

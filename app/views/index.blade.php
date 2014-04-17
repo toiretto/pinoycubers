@@ -5,12 +5,8 @@
 :: Index
 @stop
 
-@section('nav_right')
-	<li><a href="#">Profile</a></li>            
-	<li><a href="{{ URL::to('index') }}">Logout</a></li>
-@stop
-
 @section('content')
+
 <div class="hidden-xs">
     <div class="jumbotron">
         <div class="hidden-sm">
