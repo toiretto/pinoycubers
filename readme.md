@@ -5,8 +5,7 @@
 3. **Events** - Check upcoming official competitions and see results online. View the calendar for cubemeets near you
 4. **Group Discussions** - Participate in online group discussions about your favorite puzzles
 5. **User Profiles** - Contribute to the community and earn badges. Post your personal bests and tell something about yourself
-6. **Events** - Check upcoming official competitions and see results online. View the calendar for cubemeets near you
-7. **Online Competitions** - Compete online with your friend on your favorite puzzles in real time. Host and join a competition using the web interface
+6. **Online Competitions** - Compete online with your friend on your favorite puzzles in real time. Host and join a competition using the web interface
 
 ## Installation Instructions
 
@@ -85,7 +84,7 @@ Instructions for **Windows**. Sorry, I am a .NET dev as well. Can't get away wit
 
 ## Maintainers
 
-This code is maintained by Aivan Reigh Monceller of [Pinoy Cubers Association](https://www.facebook.com/groups/PINOYCUBERS/)
+This code is maintained by Aivan Monceller of [Pinoy Cubers Association](https://www.facebook.com/groups/PINOYCUBERS/)
 
 ### License
 
