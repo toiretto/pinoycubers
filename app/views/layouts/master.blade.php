@@ -6,7 +6,8 @@
                 Pinoy Cubers
             @show
         </title>
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="{{ URL::to('/assets/img/graph.jpg') }}" />
 
         <!-- CSS are placed here -->
         {{ HTML::style('packages/css/bootstrap.css') }}
@@ -21,7 +22,7 @@
 
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
