@@ -35,23 +35,23 @@
             </div>
 
 
-              <div class="collapse navbar-collapse navbar-ex1-collapse">>
-                  <ul class="nav navbar-nav navbar-right">
-                      <li class="dropdown">
-                          @if (Auth::check())
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                              <i class="fa fa-user"></i>{{Auth::user()->name}} <b class="caret"></b>
-                          </a>
-                          <ul class="dropdown-menu">
-                              <li><a href="/#"><i class="fa fa-edit"></i> Edit Profile</a></li>
-                              <li><a href="/logout"><i class="fa fa-power-off"></i> Log Out</a></li>
-                          </ul>
-                          @else
-                          <a href="/login/fb">Login</a>
-                          @endif
-                      </li>
-                  </ul>
-              </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        @if (Auth::check())
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user"></i>{{Auth::user()->name}} <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/#"><i class="fa fa-edit"></i> Edit Profile</a></li>
+                            <li><a href="/logout"><i class="fa fa-power-off"></i> Log Out</a></li>
+                        </ul>
+                        @else
+                        <a href="/login/fb">Login</a>
+                        @endif
+                    </li>
+                </ul>
+            </div>
           </div><!-- /.container-fluid -->
         </nav>
 
