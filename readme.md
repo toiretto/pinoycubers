@@ -58,6 +58,9 @@ Instructions for **Windows**. Sorry, I am a .NET dev as well. Can't get away wit
 
 ## Contribution Guidelines
 
+**Live Site** : http://pinoycubers.org/
+
+ - Send me a message on Facebook if you want to help me with the app, I would add you as tester on Facebook.
  - When planning a pull-request to add new functionality, it may be wise to [submit a proposal](https://github.com/geocine/pinoycubers/issues/new) to ensure compatibility with the project's goals.
  - I suggest using *Vagrant* for development environment configuration
 

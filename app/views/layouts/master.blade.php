@@ -11,7 +11,7 @@
         <!-- CSS are placed here -->
         {{ HTML::style('packages/css/bootstrap.css') }}
         {{ HTML::style('packages/css/font-awesome.min.css') }}
-        {{ HTML::style('packages/css/site.css?v=1') }}
+        {{ HTML::style('packages/css/site.css?v=2') }}
         <style>
             #img_banner img{
                 width:75%; height: 75%;
@@ -64,7 +64,7 @@
 
         <div id="footer">
           <div class="container">
-            <p class="text-muted">See you soon...</p>
+            <p class="text-muted">This site is maintained by <a href="https://www.facebook.com/geocine">Aivan Monceller</a> | <a href="https://www.facebook.com/groups/PCADevTeam/">PCA DevTeam</a></p>
           </div>
         </div>
 

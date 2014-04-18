@@ -16,7 +16,7 @@
             <h1>Pinoycubers</h1>
         </div>
         <p class="lead">Powered by PCADevTeam</p>
-        <a class="btn btn-lg btn-success" href="#">More Information</a>
+        <a class="btn btn-lg btn-success" href="https://www.facebook.com/groups/PINOYCUBERS/"><i class="fa fa-facebook-square"></i> Join us at Facebook!</a>
     </div>
 </div>
 
@@ -24,11 +24,15 @@
     <div class="jumbotron">
         <h1>Pinoy Cubers</h1>
         <p class="lead">Powered by PCADevTeam</p>
-        <a class="btn btn-lg btn-success" href="#">More Information</a>
+        <a class="btn btn-lg btn-success" href="https://www.facebook.com/groups/PINOYCUBERS/"><i class="fa fa-facebook-square"></i> Join us at Facebook!</a>
     </div>
 </div>
 
-<hr>
+<div class="contribute-band">
+    <div class="container">
+        <p>Want to help with the site? We accept pull requests!&nbsp;&nbsp;<a href="https://github.com/geocine/pinoycubers"><i class="fa fa-github"></i>Find us on Github</a></p>
+    </div>
+</div>
 
 <div class="row">
 
