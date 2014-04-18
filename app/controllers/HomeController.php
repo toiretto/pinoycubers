@@ -3,14 +3,14 @@
 class HomeController extends BaseController {
 
 	public function showIndex()
-	{
-        $data = array();
+	{;
 
         if (Auth::check()) {
-            $data = Auth::user();
+            return View::make('index');
         }
 
-        return View::make('index', compact("data"));
+        return View::make('index');
+
 	}
 
     public function logout(){
