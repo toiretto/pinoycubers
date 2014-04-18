@@ -10,20 +10,20 @@
 <div class="hidden-xs">
     <div class="jumbotron home-cover">
         <div class="hidden-sm">
-            <h1>Pinoy Cubers</h1>
+            <h1>Pinoy Cubers Association</h1>
         </div>
         <div class="visible-sm">
-            <h1>Pinoy Cubers</h1>
+            <h1>Pinoy Cubers Association</h1>
         </div>
         <p class="lead">Powered by PCADevTeam</p>
         <a class="btn btn-lg btn-success" href="https://www.facebook.com/groups/PINOYCUBERS/"><i class="fa fa-facebook-square"></i> Join us at Facebook!</a>
-        <img src="{{URL::to('/assets/img/pca.png') }}" class="home-logo">
+        <img src="{{URL::to('/assets/img/pca.png') }}" class="home-logo hidden-sm hidden-md">
     </div>
 </div>
 
 <div class="visible-xs">
     <div class="jumbotron">
-        <h1>Pinoy Cubers</h1>
+        <h1>Pinoy Cubers Association</h1>
         <p class="lead">Powered by PCADevTeam</p>
         <a class="btn btn-lg btn-success" href="https://www.facebook.com/groups/PINOYCUBERS/"><i class="fa fa-facebook-square"></i> Join us at Facebook!</a>
     </div>

@@ -84,3 +84,6 @@ a i {
   top: 20px;
   right: 10px;
 }
+.jumbotron .visible-sm h1 {
+  font-size: 53.5px;
+}
