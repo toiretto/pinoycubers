@@ -8,6 +8,8 @@
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:image" content="{{ URL::to('/assets/img/graph.jpg') }}" />
+        <meta property="og:description" content="Pinoy Cubers Association - unofficial records, learning resources, events, group discussions, user profiles, online competitions" />
+        <meta name="description" content="Pinoy Cubers Association - unofficial records, learning resources, events, group discussions, user profiles, online competitions">
 
         <!-- CSS are placed here -->
         {{ HTML::style('packages/css/bootstrap.css') }}
