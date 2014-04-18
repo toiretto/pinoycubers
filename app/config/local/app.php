@@ -3,8 +3,8 @@
 return array(
 
     'facebook' => array(
-        'appId' => '1476496035913536',
-        'secret' => '24e5e7d3f274bedc67a02b4197505d91'
+        'appId' => '628592760543961',
+        'secret' => '8694ce01adc42880df47185aba37fd2d'
     ),
 
 	/*
@@ -31,7 +31,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://pinoycubers.cloudapp.net',
+	'url' => 'http://pinoycubers.dev',
 
 	/*
 	|--------------------------------------------------------------------------
