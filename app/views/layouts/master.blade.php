@@ -11,7 +11,7 @@
         <!-- CSS are placed here -->
         {{ HTML::style('packages/css/bootstrap.css') }}
         {{ HTML::style('packages/css/font-awesome.min.css') }}
-        {{ HTML::style('packages/css/site.css') }}
+        {{ HTML::style('packages/css/site.css?v=1') }}
         <style>
             #img_banner img{
                 width:75%; height: 75%;
