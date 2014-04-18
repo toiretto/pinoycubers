@@ -89,6 +89,11 @@ Instructions for **Windows**. Sorry, I am a .NET dev as well. Can't get away wit
 
 This code is maintained by Aivan Monceller of [Pinoy Cubers Association](https://www.facebook.com/groups/PINOYCUBERS/)
 
+## Contributors
+
+[Omar Lozada](https://github.com/lozadaOmr) - Windows Azure Webhost. Thanks!
+
+
 ### License
 
 New BSD License

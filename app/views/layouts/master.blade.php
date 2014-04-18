@@ -64,7 +64,9 @@
 
         <div id="footer">
           <div class="container">
-            <p class="text-muted">This site is maintained by <a href="https://www.facebook.com/geocine">Aivan Monceller</a> | <a href="https://www.facebook.com/groups/PCADevTeam/">PCA DevTeam</a></p>
+            <p class="text-muted text-left col-md-6 no-padding">This site is maintained by <a href="https://www.facebook.com/geocine">Aivan Monceller</a> | <a href="https://www.facebook.com/groups/PCADevTeam/">PCA DevTeam</a></p>
+            <p class="text-muted text-right col-md-6 no-padding">Server hosting provided by <a href="https://www.facebook.com/omar.lozada.7965">Omar Lozada</a></p>
+
           </div>
         </div>
 
