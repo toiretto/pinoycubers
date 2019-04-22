@@ -87,7 +87,7 @@ Instructions for **Windows**. Sorry, I am a .NET dev as well. Can't get away wit
 
 ## Maintainers
 
-This code is maintained by Aivan Monceller of [Pinoy Cubers Association](https://www.facebook.com/groups/PINOYCUBERS/)
+This code is maintained by [Pinoy Cubers Association] Dev Team (https://www.facebook.com/groups/PINOYCUBERS/)
 
 ## Contributors
 
@@ -98,7 +98,7 @@ This code is maintained by Aivan Monceller of [Pinoy Cubers Association](https:/
 
 New BSD License
 
-Copyright (c) 2014, Aivan Reigh Monceller 
+Copyright (c) 2014, PCA Web Dev Team 
 
 All rights reserved. 
 
